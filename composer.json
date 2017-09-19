@@ -1,0 +1,41 @@
+{
+    "name": "black-bits/formbuilder",
+    "description": "HTML and Form Builder for the Laravel Framework",
+    "license": "MIT",
+    "homepage": "https://github.com/black-bits/formbuilder",
+    "support": {
+        "issues": "https://github.com/black-bits/formbuilder/issues",
+        "source": "https://github.com/black-bits/formbuilder"
+    },
+    "authors": [
+        {
+            "name": "Oliver Heck",
+            "email": "mail@oliverheck.de"
+        },
+        {
+            "name": "Andreas Przywara",
+            "email": "andreas.przywara@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "illuminate/support": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "BlackBits\\Formbuilder\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BlackBits\\Formbuilder\\FormbuilderServiceProvider"
+            ],
+            "aliases": {
+                "Formbuilder": "BlackBits\\Formbuilder\\FormbuilderFacade"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
